@@ -25,6 +25,6 @@ class DefaultJapaneseTranslator : JapanesePhraseTranslator {
     }
 
     private fun checkHour(): String {
-        return if (LocalTime.now() > LocalTime.of(17, 59,59)) "Oyasuminasai" else "Konbanwa"
+        return if (LocalTime.now() > LocalTime.of(22, 59,59)) "Oyasuminasai" else "Konbanwa"
     }
 }
