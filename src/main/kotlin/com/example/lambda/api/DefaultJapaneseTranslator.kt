@@ -8,6 +8,7 @@ class DefaultJapaneseTranslator : JapanesePhraseTranslator {
         "Bom dia" to "Ohayô gozaimasu",
         "bom dia" to "Ohayô gozaimasu",
         "Boa tarde" to "Konnichiwa",
+        "boa tarde" to "Konnichiwa",
         "Boa noite" to checkHour(),
         "boa noite" to checkHour(),
         "Bem vindo de volta" to "Okaerinassai",
@@ -28,3 +29,5 @@ class DefaultJapaneseTranslator : JapanesePhraseTranslator {
         return if (LocalTime.now() > LocalTime.of(22, 59,59)) "Oyasuminasai" else "Konbanwa"
     }
 }
+
+
